@@ -1,0 +1,200 @@
+<!-- Объявление типа документа -->
+<!DOCTYPE html>
+<!-- Открывающий тег для HTML -->
+<html lang="en">
+  <head>
+    <!-- Мета-тег для кодировки символов -->
+    <meta charset="UTF-8" />
+    <!-- Мета-тег для настройки масштабирования страницы -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Заголовок страницы -->
+    <title>Document</title>
+    <!-- Подключение внешнего CSS-файла -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Заголовок страницы -->
+    <header>
+      <!-- Контейнер для содержимого заголовка -->
+      <div class="container">
+        <div class="header__top">
+          <!-- Логотип сайта -->
+          <div class="logo">
+            <a href="#">Логотип сайта</a>
+          </div>
+
+          <!-- Навигационное меню -->
+          <nav>
+            <ul>
+              <% if (authenticated) { %>
+                <!-- Ссылка на страницу выхода -->
+                <li><a href="/logout">Выход</a></li>
+                <!-- Ссылка на страницу добавления новости -->
+                <li><a href="/add-news">Добавить новость</a></li>
+                <li><a href="/news">Новости</a></li>
+              <% } else { %>
+                <!-- Ссылка на страницу регистрации -->
+                <li><a href="/register">Регистрация</a></li>
+                <!-- Ссылка на страницу авторизации -->
+                <li><a href="/login">Авторизация</a></li>
+              <% } %>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main>
+      <!-- Контейнер для основного содержимого -->
+      <div class="container">
+        <!-- Заголовок раздела "Новости" -->
+        <h2 class="title">Новости</h2>
+        <!-- Сетка для отображения новостей -->
+        <div class="grid">
+          <!-- Карточка новости -->
+          <div class="item">
+            <!-- Заголовок новости -->
+            <h2>Text</h2>
+            <!-- Изображение новости -->
+            <img
+              src="https://images.thequint.com/thequint%2F2022-09%2F6b958132-2161-4a55-aaa0-e6010046f953%2Fgarena.jpg?rect=0%2C0%2C1440%2C810&auto=format%2Ccompress&fmt=webp&width=720&w=1200"
+              alt=""
+            />
+            <!-- Текст новости -->
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint esse laboriosam, voluptas, nesciunt maiores
+              iusto adipisci quia hic atque alias vitae, assumenda ullam quos
+              harum quas ratione aspernatur iste. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Reprehenderit sint esse laboriosam,
+              voluptas, nesciunt maiores iusto adipisci quia hic atque alias
+              vitae, assumenda ullam quos harum quas ratione aspernatur iste.
+            </p>
+          </div>
+          <!-- Повторение карточек новостей с разным содержим -->
+
+          <div class="item">
+            <h2>Text</h2>
+            <img
+              src="https://images.thequint.com/thequint%2F2022-09%2F6b958132-2161-4a55-aaa0-e6010046f953%2Fgarena.jpg?rect=0%2C0%2C1440%2C810&auto=format%2Ccompress&fmt=webp&width=720&w=1200"
+              alt=""
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint esse laboriosam, voluptas, nesciunt maiores
+              iusto adipisci quia hic atque alias vitae, assumenda ullam quos
+              harum quas ratione aspernatur iste.
+            </p>
+          </div>
+          <div class="item">
+            <h2>Text</h2>
+            <img
+              src="https://images.thequint.com/thequint%2F2022-09%2F6b958132-2161-4a55-aaa0-e6010046f953%2Fgarena.jpg?rect=0%2C0%2C1440%2C810&auto=format%2Ccompress&fmt=webp&width=720&w=1200"
+              alt=""
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint esse laboriosam, voluptas, nesciunt maiores
+              iusto adipisci quia hic atque alias vitae, assumenda ullam quos
+              harum quas ratione aspernatur iste.
+            </p>
+          </div>
+          <div class="item">
+            <h2>Text</h2>
+            <img
+              src="https://images.thequint.com/thequint%2F2022-09%2F6b958132-2161-4a55-aaa0-e6010046f953%2Fgarena.jpg?rect=0%2C0%2C1440%2C810&auto=format%2Ccompress&fmt=webp&width=720&w=1200"
+              alt=""
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint esse laboriosam, voluptas, nesciunt maiores
+              iusto adipisci quia hic atque alias vitae, assumenda ullam quos
+              harum quas ratione aspernatur iste.
+            </p>
+          </div>
+          <div class="item">
+            <h2>Text</h2>
+            <img
+              src="https://images.thequint.com/thequint%2F2022-09%2F6b958132-2161-4a55-aaa0-e6010046f953%2Fgarena.jpg?rect=0%2C0%2C1440%2C810&auto=format%2Ccompress&fmt=webp&width=720&w=1200"
+              alt=""
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint esse laboriosam, voluptas, nesciunt maiores
+              iusto adipisci quia hic atque alias vitae, assumenda ullam quos
+              harum quas ratione aspernatur iste.
+            </p>
+          </div>
+          <div class="item">
+            <h2>Text</h2>
+            <img
+              src="https://images.thequint.com/thequint%2F2022-09%2F6b958132-2161-4a55-aaa0-e6010046f953%2Fgarena.jpg?rect=0%2C0%2C1440%2C810&auto=format%2Ccompress&fmt=webp&width=720&w=1200"
+              alt=""
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint esse laboriosam, voluptas, nesciunt maiores
+              iusto adipisci quia hic atque alias vitae, assumenda ullam quos
+              harum quas ratione aspernatur iste.
+            </p>
+          </div>
+          <div class="item">
+            <h2>Text</h2>
+            <img
+              src="https://images.thequint.com/thequint%2F2022-09%2F6b958132-2161-4a55-aaa0-e6010046f953%2Fgarena.jpg?rect=0%2C0%2C1440%2C810&auto=format%2Ccompress&fmt=webp&width=720&w=1200"
+              alt=""
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint esse laboriosam, voluptas, nesciunt maiores
+              iusto adipisci quia hic atque alias vitae, assumenda ullam quos
+              harum quas ratione aspernatur iste.
+            </p>
+          </div>
+          <div class="item">
+            <h2>Text</h2>
+            <img
+              src="https://images.thequint.com/thequint%2F2022-09%2F6b958132-2161-4a55-aaa0-e6010046f953%2Fgarena.jpg?rect=0%2C0%2C1440%2C810&auto=format%2Ccompress&fmt=webp&width=720&w=1200"
+              alt=""
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sint esse laboriosam, voluptas, nesciunt maiores
+              iusto adipisci quia hic atque alias vitae, assumenda ullam quos
+              harum quas ratione aspernatur iste.
+            </p>
+          </div>
+        </div>
+        <!-- Заголовок раздела "Галерея" -->
+        <h2 class="title">Галерея</h2>
+        <!-- Контейнер для изображений -->
+        <div class="flex">
+          <!-- Первое изображение -->
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <!-- Второе изображение -->
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <!-- Третье изображение -->
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <!-- Повторение для остальных изображений -->
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+          <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt="" />
+
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>Сайт разработал такой-то</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<h2>Новости</h2>
+
+<ul>
+  <% news.forEach((item) => { %>
+    <li>
+      <h3><%= item.title %></h3>
+      <p><%= item.description %></p>
+      <img src="<%= item.imageUrl %>" alt="<%= item.title %>">
+    </li>
+  <% }); %>
+</ul>

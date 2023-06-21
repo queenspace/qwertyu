@@ -1,0 +1,19 @@
+<h2>Добавить новость</h2>
+
+<form action="/add-news" method="POST">
+  <div>
+    <label for="title">Заголовок:</label>
+    <input type="text" id="title" name="title" required>
+  </div>
+  <div>
+    <label for="description">Описание:</label>
+    <textarea id="description" name="description" required></textarea>
+  </div>
+  <div>
+    <label for="imageUrl">URL изображения:</label>
+    <input type="text" id="imageUrl" name="imageUrl" required>
+  </div>
+  <div>
+    <button type="submit">Добавить</button>
+  </div>
+</form>
